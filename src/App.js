@@ -1,9 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
 import Wrapper from "./components/Wrapper/Wrapper";
 import Header from "./components/Navbar";
 import Footer from './components/Footer';
+import RenderedQuote from "./components/Quote/Quote";
+import Api from "./components/Quote/api"
 
 
 class App extends Component {
@@ -15,8 +16,11 @@ class App extends Component {
       <div>
         <Wrapper>
           <Header />
+          <Api />
+          <RenderedQuote />
+          <Footer />
         </Wrapper>
-        <Footer />
+        
       </div>
       
   );

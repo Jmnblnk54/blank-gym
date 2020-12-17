@@ -1,0 +1,10 @@
+.quoteText {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.author {
+    font-style: italic;
+}
+
