@@ -5,6 +5,7 @@ import Header from "./components/Navbar";
 import Footer from './components/Footer';
 import RenderedQuote from "./components/Quote/Quote";
 import Api from "./components/Quote/api"
+import PhotoToggle from "./components/Hero/Hero";
 
 
 class App extends Component {
@@ -16,7 +17,7 @@ class App extends Component {
       <div>
         <Wrapper>
           <Header />
-          <Api />
+          <PhotoToggle />
           <RenderedQuote />
           <Footer />
         </Wrapper>
