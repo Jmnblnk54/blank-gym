@@ -4,7 +4,7 @@ import Wrapper from "./components/Wrapper/Wrapper";
 import Header from "./components/Navbar";
 import Footer from './components/Footer';
 import RenderedQuote from "./components/Quote/Quote";
-import Api from "./components/Quote/api"
+// import Api from "./components/Quote/api"
 import PhotoToggle from "./components/Hero/Hero";
 
 
@@ -15,12 +15,15 @@ class App extends Component {
   render () {
     return (
       <div>
-        <Wrapper>
+        {/* <Wrapper> */}
           <Header />
-          <PhotoToggle />
+            <div>
+             <PhotoToggle />
+            </div>
           <RenderedQuote />
+            
           <Footer />
-        </Wrapper>
+        {/* </Wrapper> */}
         
       </div>
       
