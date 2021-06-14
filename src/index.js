@@ -4,10 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-import { AppolloServer } from 'apollo-server';
+import { AppolloServer, gql } from 'apollo-server';
 
-const server = new ApollowServer();
+const typeDefs = gql`
+type Query{
+  members: [Member]
+}
+type Member {
+  id: ID!,
+  firstName: String!,
+  lastName: String!,
+  startDate: ,
+  gender: ,
+  endDate: ,
+  memberLevel: Int,
+  personalTraining: Boolean,
+  persTngSessionsPurchased: Int,
+  persTngSessionsRemaining: Int,
+}`
 
+const server = new ApollowServer({ typeDefs });
 server 
   .listen({port: process.env.PORT || 4000})
   .then(({url}) => {
