@@ -1,34 +1,32 @@
 import './App.css';
-import { Component } from 'react';
-import Wrapper from "./components/Wrapper/Wrapper";
-import Header from "./components/Navbar";
-import Footer from './components/Footer';
-import RenderedQuote from "./components/Quote/Quote";
-// import Api from "./components/Quote/api"
-import PhotoToggle from "./components/Hero/Hero";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Splash from "./Views/Splash";
+import Menu from "./Views/Menu";
+import AboutUs from "./Views/AboutUs";
 
 
-class App extends Component {
 
-  state = {};
+function App()  {
+  
+  // const { isLoading } = useAuth0;
+  // if (isLoading ) {
+  //   return <Loading />;
+  // }
 
-  render () {
-    return (
-      <div>
-        {/* <Wrapper> */}
-          <Header />
-            <div>
-             <PhotoToggle />
-            </div>
-          <RenderedQuote />
-            
-          <Footer />
-        {/* </Wrapper> */}
-        
-      </div>
-      
-  );
-  }
+  return (
+    <Router>
+      <Switch>
+        <Route path="/" component={ Splash } />
+        <Route path="/menu" component={ Menu } />
+        <Route path="/aboutus" component={ AboutUs } />
+      </Switch>
+    </Router>
+  )
 }
+
 
 export default App;

@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
+import { AppolloServer } from 'apollo-server';
+
+const server = new ApollowServer();
+
+server 
+  .listen({port: process.env.PORT || 4000})
+  .then(({url}) => {
+    console.log(`GraphQL running at ${url}`);
+  })
 
 ReactDOM.render(
   <React.StrictMode>

@@ -42,21 +42,16 @@ const items = [
     },
     {
         src: JandJ8,
-        altText: 'Slide 2',
-        caption: 'Slide 2', 
-        key: 2
+        altText: 'Josh coaching Julia',
     },
     {
         src: JandJ9,
-        altText: 'Slide 3',
-        caption: 'Slide 3', 
-        key: 3
+        altText: 'Julia coaching Josh',
     },
-    // {
-    //     src: '../assets/004sm (1).jpg',
-    //     altText: 'Slide 3',
-    //     caption: 'Slide 3'
-    // },
+    {
+        src: JandJ7,
+        altText: 'Julia laughing at Josh',
+    },
     // {
     //     src: '../assets/005sm.jpg',
     //     altText: 'Slide 3',
